@@ -5,7 +5,7 @@ require 'omniauth-twitter'
 set :bind, '0.0.0.0' #Vagrant fix
 
 use OmniAuth::Builder do
-  provider :twitter, ENV["CONSUMER_KEY"], ENV["CONSUMER_SECRET"]
+  provider :twitter
 end
 configure do
   enable :sessions
@@ -29,9 +29,10 @@ get '/login' do
   redirect to("/auth/twitter")
 end
 
-get '/auth/twitter/callback',to: 'sessions#create' do
-   env['omniauth.auth'] ? session[:admin] = true : halt(401,'Not Authorized')
-  "You are now logged in"
+get '/auth/twitter/callback' do
+  session[:admin] = true
+  session[:username] = env['omniauth.auth']['info']['name']
+  "<h1>Hi #{session[:username]}!</h1>"
 end
 
 get '/auth/failure' do
