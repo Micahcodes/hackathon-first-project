@@ -4,6 +4,8 @@
   <title>SplashCard</title>
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/foundation/5.1.1/css/foundation.min.css" />
   <link rel="stylesheet" href="/application.css" type="text/css" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
 </head>
 <body>
   <div class="row">
@@ -15,29 +17,30 @@
   </div>
   <div id="picture-wrapper">
     <div id="grid-row-1">
-      <div class="grids" id="grid-1"><img src="<%= @user_pics[0] %>">
+      <div class="grids" id="grid-1"><a href="/create/3/0"><img src="<%= @user_pics[0] %>"></a>
       </div>
-      <div class="grids" id="grid-2"><img src="<%= @user_pics[1] %>">
+      <div class="grids" id="grid-2"><a href="/create/3/1"><img src="<%= @user_pics[1] %>"></a>
       </div>
-      <div class="grids" id="grid-3"><img src="<%= @user_pics[2] %>">
+      <div class="grids" id="grid-3"><a href="/create/3/2"><img src="<%= @user_pics[2] %>"></a>
       </div>
     </div>
     <div id="grid-row-2">
-      <div class="grids" id="grid-4"><img src="<%= @user_pics[3] %>">
+      <div class="grids" id="grid-4"><a href="/create/3/3"><img src="<%= @user_pics[3] %>"></a>
       </div>
-      <div class="grids" id="grid-5"><img src="<%= @user_pics[4] %>">
+      <div class="grids" id="grid-5"><a href="/create/3/4"><img src="<%= @user_pics[4] %>"></a>
       </div>
-      <div class="grids" id="grid-6"><img src="<%= @user_pics[5] %>">
+      <div class="grids" id="grid-6"><a href="/create/3/5"><img src="<%= @user_pics[5] %>"></a>
       </div>
     </div>
     <div id="grid-row-3">
-      <div class="grids" id="grid-7"><img src="<%= @user_pics[6] %>">
+      <div class="grids" id="grid-7"><a href="/create/3/6"><img src="<%= @user_pics[6] %>"></a>
       </div>
-      <div class="grids" id="grid-8"><img src="<%= @user_pics[7] %>">
+      <div class="grids" id="grid-8"><a href="/create/3/7"><img src="<%= @user_pics[7] %>"></a>
       </div>
-      <div class="grids" id="grid-9"><img src="<%= @user_pics[8] %>">
+      <div class="grids" id="grid-9"><a href="/create/3/8"><img src="<%= @user_pics[8] %>"></a>
       </div>
     </div>
   </div>
+
   </body>
 </html>
