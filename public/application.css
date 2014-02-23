@@ -11,29 +11,22 @@ body {
 }
 
 .top-page-header {
-  background-color: #4884E0;
+  background-color: #465BDE;
   height: 120px;
   position: absolute;
 }
 
 #postcard-example-home {
-  height: 250px;
-  width: 350px;
-  position: absolute;
-  padding-top: 60px;
-  left: 0;
-  right: 0;
-  margin: auto;
-}
-
-#postcard-example-final {
-  height: 250px;
-  width: 350px;
-  position: absolute;
-  padding-top: 200px;
-  left: 0;
-  right: 0;
-  margin: auto;
+  height: 370px;
+  width: 700px;
+  margin-top: 20px;
+  margin-left: 150px;
+  background-image:url('austin_skyline2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0px 0px 0px 0px;
+  border-style:solid;
+  border: 5px 5px 5px 5px black;
 }
 
 #picture-wrapper {
@@ -43,39 +36,86 @@ body {
   margin: auto;
 }
 
-#recipient-input-wrapper {
-  height: 275px;
+#tweet-message-form {
+  padding-top: 130px;
   width: 500px;
-  padding-top: 150px;
+  left:0;
+  right:0;
+  position:absolute;
   margin: auto;
 }
 
-#tweet-input-wrapper {
-  height: 50px;
-  width: 50px;
-  padding-left: 270px;
-}
-
-#tweet-message {
-  width: 500px;
-  height: 100px;
-  -webkit-border-radius: 5px 5px 5px 5px;
-  border-radius: 5px 5px 5px 5px;
+#recipient {
+  width: 200px;
 }
 
 #at-symbol {
-  font-size: 80px;
-  width: 60px;
-  float: left;
-  margin-right: 20px;
-  margin-left: 25px;
+  color: black;
+  font-size: 50px;
 }
 
-#recipient {
-  width: 300px;
-  margin-top: 40px;
+#add-tweet-message {
+  font-size: 26px;
+  color: black;
+}
+
+#postcard-message-next {
+  height: 50px;
+  width: 100px;
+  font-size: 18px;
+  color: white;
+  background-color: #C8592B;
+  text-shadow: 2px 2px 2px #000000;
   -webkit-border-radius: 5px 5px 5px 5px;
   border-radius: 5px 5px 5px 5px;
+}
+
+#postcard-example-final {
+  height: 370px;
+  width: 700px;
+  margin-top: 150px;
+  margin-left: 150px;
+  background-image:url('austin_skyline2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0px 0px 0px 0px;
+  border-style:solid;
+  border: 5px 5px 5px 5px black;
+}
+
+#greetings-text {
+  font-family: 'Impact';
+  text-align: center;
+  text-shadow: 5px 5px 5px #000000;
+  color: #C8592B;
+}
+
+#austin {
+  font-size: 60px;
+}
+
+#recipient-final {
+  font-size: 30px;
+  color:black;
+}
+
+#tweet-message-final {
+  padding-top: 20px;
+  width: 400px;
+  font-size: 30px;
+  color:black;
+  padding-left: 5px;
+  text-shadow: 2px 2px 2px white;
+}
+
+#postcard-final-wrapper {
+  float:left;
+}
+
+#instagram-image {
+  padding-right: 50px;
+  padding-top: 0px;
+  float:right;
 }
 
 .grids {
@@ -196,4 +236,22 @@ body {
   text-align: center;
   font-family: "superclarendon", Palatino, serif;
   margin-top: 20px;
+  text-shadow: 3px 3px 5px black;
+}
+
+#tweet-it {
+  float:left;
+  margin-left: 60px;
+}
+
+#tweet-it-out {
+  float:right;
+  margin-top: 30px;
+  margin-right: 50px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  background-color: #C8592B;
+  font-family: Helvetica;
+  -webkit-box-shadow: 3px 3px 3px 2px #000000;
+  box-shadow: 1px 2px 1px 2px #000000;
 }
