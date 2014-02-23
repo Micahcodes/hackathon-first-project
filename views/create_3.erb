@@ -18,8 +18,25 @@
   <div id="postcard-example-final">
     <h2 id="greetings-text">GREETINGS FROM <span id="austin"> AUSTIN</span></h2>
     <div id="postcard-final-wrapper">
-      <label id="recipient-final"><strong><%= @recipient %></strong></label>
-      <label id="tweet-message-final"><strong><%= @message %></strong></label>
+      <form id="tweet-message-form" method="post" action="/create/2/:pic">
+  <div class="row">
+    <div class="large-12 columns">
+      <label id="at-symbol">@
+        <input id="recipient" type="text" name="recipient" placeholder="Recipient" />
+      </label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-12 columns">
+      <label id="add-tweet-message">Tweet Message
+        <textarea rows="9" id="add-tweet-here" name="message" placeholder="Type here"></textarea>
+      </label>
+    </div>
+  </div>
+
+</form>
+     <!--  <label id="recipient-final"><strong><%= @recipient %></strong></label>
+      <label id="tweet-message-final"><strong><%= @message %></strong></label> -->
     </div>
       <img id="instagram-image" src="<%= @selected %>" />
   </div>

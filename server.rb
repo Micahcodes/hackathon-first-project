@@ -14,8 +14,8 @@ enable :sessions
 CALLBACK_URL = "http://localhost:4567/oauth/callback"
 
 Instagram.configure do |config|
-  config.client_id = "22473cea5022408e957e567d0d374d3c"
-  config.client_secret = "93b68e1a186f4ec1931834e104cc6c60"
+  config.client_id = ENV['IG_KEY']
+  config.client_secret = ENV['IG_SECRET']
 end
 
 get "/home" do
@@ -50,27 +50,24 @@ get "/create" do
   erb :create
 end
 
-get '/create/2' do
+get '/create/2/:pic' do
+  @pic = params[:pic]
+  @user_pics = session[:user_pics]
+  @selected = @user_pics[@pic.to_i]
   erb :create_2
 end
 
-post '/create/2' do
+post '/create/2/:pic' do
   @recipient = params[:recipient]
   @message = params[:message]
-
-  @pic = params[:pic]
-  @user_pics = session[:user_pics]
-
-  puts @user_pics[0]
-  puts @selected
-
-  @selected = @user_pics[@pic.to_i]
-
+  @selected
   erb :create_3
 end
 
 get '/create/3/:pic' do
-
+  @pic = params[:pic]
+  @user_pics = session[:user_pics]
+  @selected = @user_pics[@pic.to_i]
   erb :create_3
 end
 
@@ -89,7 +86,6 @@ helpers do
     true
   end
 end
-
 
 get '/private' do
   halt(401,'Not Authorized') unless admin?
@@ -110,10 +106,11 @@ get '/auth/twitter/callback' do
   @twitter_handle = env['omniauth.auth']['info']['nickname']
   require 'twitter'
   client = Twitter::REST::Client.new do |config|
-  config.consumer_key = $twitter_consumer_key
-  config.consumer_secret = $twitter_consumer_secret
-  config.access_token = $twitter_access_token
-  config.access_token_secret = $twitter_access_secret
+  config.consumer_key = ENV['TWITTER_CONSUMER_KEY']
+  config.consumer_secret = ENV['TWITTER_CONSUMER_SECRET']
+  config.access_token = ENV['TWITTER_ACCESS_TOKEN']
+  config.access_token_secret = ENV['TWITTER_ACCESS_SECRET']
+
   end
   #puts client.user_timeline(@twitter_handle)
   @list = client.user_timeline(@twitter_handle)

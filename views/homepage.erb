@@ -23,8 +23,23 @@
 <div id="postcard-example-home">
     <h2 id="greetings-text">GREETINGS FROM <span id="austin"> AUSTIN</span></h2>
     <div id="postcard-final-wrapper">
-      <label id="recipient-final"><strong>kathbeaty</strong></label>
-      <label id="tweet-message-final"><strong>Hello, world! I'm in Austin, Texas, the best city in the world!</strong></label>
+     <form id="tweet-message-form" method="post" action="/create/2/:pic">
+  <div class="row">
+    <div class="large-12 columns">
+      <label id="at-symbol">@
+        <input id="recipient" type="text" name="recipient" placeholder="Recipient" />
+      </label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-12 columns">
+      <label id="add-tweet-message">Tweet Message
+        <textarea id="add-tweet-here" name="message" placeholder="Type here"></textarea>
+      </label>
+    </div>
+  </div>
+
+</form>
     </div>
       <img id="instagram-image" src="http://placekitten.com/g/200/200" />
   </div>

@@ -1,5 +1,5 @@
 body {
-  background-color:#A6D785;
+  background-color: #c5c8c9;
 }
 
 #top-home {
@@ -9,7 +9,7 @@ body {
 }
 
 #home-header-wrapper {
-  background-color: #465BDE;
+  background-color: #2b5464;
   height: 150px;
   left:0;
   width: 950px;
@@ -32,7 +32,7 @@ body {
 }
 
 .top-page-header {
-  background-color: #465BDE;
+  background-color: #2b5464;
   height: 120px;
   width: 950px;
   position: absolute;
@@ -72,12 +72,8 @@ body {
 }
 
 #tweet-message-form {
-  padding-top: 130px;
-  width: 500px;
-  left:0;
-  right:0;
-  position:absolute;
-  margin: auto;
+  width: 350px;
+
 }
 
 #recipient {
@@ -108,13 +104,11 @@ body {
 }
 
 #postcard-example-final {
-  height: 370px;
+  height: 450px;
   width: 700px;
   margin-top: 150px;
   margin-left: 150px;
-  background-image:url('austin_skyline2.png');
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #e0d1c2;
   padding: 0px 0px 0px 0px;
   border-style:solid;
   border: 5px 5px 5px 5px black;
@@ -151,8 +145,10 @@ body {
 }
 
 #instagram-image {
-  padding-right: 50px;
   padding-top: 0px;
+  padding-right: 10px;
+  height: 340px;
+  width: 340px;
   float:right;
 }
 
@@ -261,6 +257,7 @@ body {
   -webkit-border-radius: 5px 5px 5px 5px;
   border-radius: 5px 5px 5px 5px;
   background: #FFEBCC;
+  height: 10em;
 }
 
 #arrow {
