@@ -6,24 +6,19 @@
   <link rel="stylesheet" href="/application.css" type="text/css" />
 </head>
 <body>
-<div class="row">
-  <div class="small-12 columns">
-    <div id="home-header-wrapper">
-    <div id="splash-name">
-      <p>SplashCard</p>
-    </div>
-    <div id="send">
-        <p id="send-postcard">Send a Postcard</>
-        <a href="/oauth/connect" class="button" id="instagram-signin">Sign in with Instagram</a>
-        <!-- <img id="arrow" src="/curly-arro.png"/> -->
+  <div class="row">
+    <div class="small-12 columns top-page-header">
+      <div class="top-header">
+        <p id="tweet-it">Tweet it Out</p>
+        <button id="tweet-it-out">I like it! Tweet it</button>
+      </div>
     </div>
   </div>
-  </div>
-</div>
-<div id="postcard-example-home">
+  <div>
+  <div id="postcard-example-final">
     <h2 id="greetings-text">GREETINGS FROM <span id="austin"> AUSTIN</span></h2>
     <div id="postcard-final-wrapper">
-     <form id="tweet-message-form" method="post" action="/create/2/:pic">
+      <form id="tweet-message-form" method="post" action="/create/2/:pic">
   <div class="row">
     <div class="large-12 columns">
       <label id="at-symbol">@
@@ -34,15 +29,17 @@
   <div class="row">
     <div class="large-12 columns">
       <label id="add-tweet-message">Tweet Message
-        <textarea id="add-tweet-here" name="message" placeholder="Type here"></textarea>
+        <textarea rows="9" id="add-tweet-here" name="message" placeholder="Type here"></textarea>
       </label>
     </div>
   </div>
 
 </form>
+     <!--  <label id="recipient-final"><strong><%= @recipient %></strong></label>
+      <label id="tweet-message-final"><strong><%= @message %></strong></label> -->
     </div>
-      <img id="instagram-image" src="http://placekitten.com/g/200/200" />
+      <img id="instagram-image" src="<%= @selected %>" />
   </div>
-  </body>
+</div>
+</body>
 </html>
-

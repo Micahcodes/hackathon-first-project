@@ -6,24 +6,14 @@
   <link rel="stylesheet" href="/application.css" type="text/css" />
 </head>
 <body>
-<div class="row">
-  <div class="small-12 columns">
-    <div id="home-header-wrapper">
-    <div id="splash-name">
-      <p>SplashCard</p>
-    </div>
-    <div id="send">
-        <p id="send-postcard">Send a Postcard</>
-        <a href="/oauth/connect" class="button" id="instagram-signin">Sign in with Instagram</a>
-        <!-- <img id="arrow" src="/curly-arro.png"/> -->
+ <div class="row">
+    <div class="small-12 columns top-page-header">
+      <div class="top-header">
+        <p>Add Your Tweet</p>
+      </div>
     </div>
   </div>
-  </div>
-</div>
-<div id="postcard-example-home">
-    <h2 id="greetings-text">GREETINGS FROM <span id="austin"> AUSTIN</span></h2>
-    <div id="postcard-final-wrapper">
-     <form id="tweet-message-form" method="post" action="/create/2/:pic">
+  <form id="tweet-message-form" method="post" action="/create/2/:pic">
   <div class="row">
     <div class="large-12 columns">
       <label id="at-symbol">@
@@ -38,11 +28,11 @@
       </label>
     </div>
   </div>
-
-</form>
+  <div class="row">
+    <div class="large-12 columns">
+      <input id="postcard-message-next" type="submit" value="Next"/>
     </div>
-      <img id="instagram-image" src="http://placekitten.com/g/200/200" />
   </div>
-  </body>
+</form>
+</body>
 </html>
-
