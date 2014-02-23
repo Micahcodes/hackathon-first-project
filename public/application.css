@@ -5,33 +5,68 @@ body {
 #top-home {
   background-color: #465BDE;
   height: 170px;
+  position:absolute;
+}
+
+#home-header-wrapper {
+  background-color: #465BDE;
+  height: 150px;
+  left:0;
+  width: 950px;
+  top:0px;
+  margin:0;
+  padding:0;
+  -webkit-border-bottom-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  border-bottom-left-radius: 5px;
   border-bottom-color: #C8592B;
   border-bottom-style: solid;
   border-bottom-width: 5px;
+  border-left-color: #C8592B;
+  border-left-style: solid;
+  border-left-width: 5px;
+  border-right-color: #C8592B;
+  border-right-style: solid;
+  border-right-width: 5px;
 }
 
 .top-page-header {
   background-color: #465BDE;
   height: 120px;
+  width: 950px;
   position: absolute;
+  -webkit-border-bottom-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-color: #C8592B;
+  border-bottom-style: solid;
+  border-bottom-width: 5px;
+  border-left-color: #C8592B;
+  border-left-style: solid;
+  border-left-width: 5px;
+  border-right-color: #C8592B;
+  border-right-style: solid;
+  border-right-width: 5px;
 }
 
 #postcard-example-home {
   height: 370px;
   width: 700px;
-  margin-top: 20px;
   margin-left: 150px;
   background-image:url('austin_skyline2.png');
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 0px 0px 0px 0px;
   border-style:solid;
   border: 5px 5px 5px 5px black;
+  position:relative;
+  margin-top: 0px;
 }
 
 #picture-wrapper {
   height: 800px;
-  width: 500px;
+  width: 700px;
   padding-top: 150px;
   margin: auto;
 }
@@ -52,11 +87,13 @@ body {
 #at-symbol {
   color: black;
   font-size: 50px;
+  font-family: "superclarendon", Palatino, serif;
 }
 
 #add-tweet-message {
-  font-size: 26px;
+  font-size: 22px;
   color: black;
+  font-family: "superclarendon", Palatino, serif;
 }
 
 #postcard-message-next {
@@ -97,6 +134,7 @@ body {
 #recipient-final {
   font-size: 30px;
   color:black;
+  margin-left: 10px;
 }
 
 #tweet-message-final {
@@ -104,7 +142,7 @@ body {
   width: 400px;
   font-size: 30px;
   color:black;
-  padding-left: 5px;
+  padding-left: 10px;
   text-shadow: 2px 2px 2px white;
 }
 
@@ -119,13 +157,12 @@ body {
 }
 
 .grids {
-  height: 100px;
-  width: 100px;
+  height: 200px;
+  width: 200px;
   background-color: white;
 }
 
 #grid-row-1 {
-  width: 500px;
   display: inline-block;
   margin-bottom: 20px;
 }
@@ -137,19 +174,19 @@ body {
 
 #grid-2 {
   float: left;
-  margin-left: 100px;
+  margin-left: 10px;
   background-color: lime;
 }
 
 #grid-3 {
   background-color: red;
-  float: right;
+  float: left;
+  margin-left: 10px;
 }
 
 #grid-row-2 {
-  width: 500px;
   display: inline-block;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 #grid-4 {
@@ -159,32 +196,35 @@ body {
 
 #grid-5 {
   float: left;
-  margin-left: 100px;
+  margin-left: 10px;
   background-color: blue;
 }
 
 #grid-6 {
   background-color: orange;
-  float: right;
+  float: left;
+  margin-left: 10px;
 }
 
 #grid-row-3 {
   display: inline-block;
-  width: 500px;
 }
 
 #grid-7 {
   float: left;
+  background-color: purple;
 }
 
 #grid-8 {
   float: left;
-  margin-left: 100px;
+  margin-left: 10px;
+  background-color: teal;
 }
 
 #grid-9 {
   background-color: yellow;
-  float: right;
+  float: left;
+  margin-left: 10px;
 }
 
 #splash-name p {
@@ -209,6 +249,18 @@ body {
 #send-postcard {
   font-size: 25px;
   font-family: "superclarendon", Palatino, serif;
+}
+
+#recipient {
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  background: #FFEBCC;
+}
+
+#add-tweet-here {
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  background: #FFEBCC;
 }
 
 #arrow {
