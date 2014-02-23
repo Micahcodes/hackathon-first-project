@@ -13,12 +13,26 @@
       </div>
     </div>
   </div>
-  <div id="recipient-input-wrapper">
-    <h3 id="at-symbol">@</h3>
-    <input id="recipient" type="text" value="Recipient">
+  <form id="tweet-message-form" method="post" action="/create/2">
+  <div class="row">
+    <div class="large-12 columns">
+      <label id="at-symbol">@
+        <input id="recipient" type="text" name="recipient" placeholder="Recipient" />
+      </label>
+    </div>
   </div>
-  <div id="tweet-input-wrapper">
-    <input id="tweet-message" type="text" value="Your Postcard Tweet Message">
+  <div class="row">
+    <div class="large-12 columns">
+      <label id="add-tweet-message">Tweet Message
+        <textarea name="message" placeholder="Type here"></textarea>
+      </label>
+    </div>
   </div>
+  <div class="row">
+    <div class="large-12 columns">
+      <input id="postcard-message-next" type="submit" value="Next"/>
+    </div>
+  </div>
+</form>
 </body>
 </html>
