@@ -4,5 +4,5 @@ gem 'sinatra-contrib'
 gem 'pry'
 gem 'rspec'
 gem 'foreman'
-gem 'vcr'
-gem 'webmock'
+gem 'omniauth-twitter'
+

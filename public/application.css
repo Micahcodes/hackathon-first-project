@@ -5,12 +5,103 @@ body {
 #top-home {
   background-color: #4884E0;
   height: 170px;
-  position: absolute;
+}
+
+#instagram-signin {
+  height: 50px;
+  width: 250px;
+  margin-right: 30px;
 }
 
 .top-page-header {
   background-color: #4884E0;
   height: 120px;
+}
+
+#postcard-example-home {
+  height: 250px;
+  width: 350px;
+  position: absolute;
+  padding-top: 60px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+#picture-wrapper {
+  height: 800px;
+  width: 500px;
+  padding-top: 150px;
+  margin: auto;
+}
+
+.grids {
+  height: 100px;
+  width: 100px;
+  background-color: white;
+}
+
+#grid-row-1 {
+  width: 500px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+#grid-1 {
+  float: left;
+  background-color: purple;
+}
+
+#grid-2 {
+  float: left;
+  margin-left: 100px;
+  background-color: lime;
+}
+
+#grid-3 {
+  background-color: red;
+  float: right;
+}
+
+#grid-row-2 {
+  width: 500px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+#grid-4 {
+  background-color: lime;
+  float: left;
+}
+
+#grid-5 {
+  float: left;
+  margin-left: 100px;
+  background-color: blue;
+}
+
+#grid-6 {
+  background-color: orange;
+  float: right;
+}
+
+#grid-row-3 {
+  display: inline-block;
+  width: 500px;
+}
+
+#grid-7 {
+  float: left;
+}
+
+#grid-8 {
+  float: left;
+  margin-left: 100px;
+}
+
+#grid-9 {
+  background-color: yellow;
+  float: right;
 }
 
 #splash-name p {
