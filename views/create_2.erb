@@ -24,10 +24,31 @@
  <div class="row">
     <div class="small-12 columns top-page-header">
       <div class="top-header">
-        <p>Add Your Tweets</p>
+        <p>Add Your Tweet</p>
       </div>
     </div>
   </div>
+  <form id="tweet-message-form" method="post" action="/create/2">
+  <div class="row">
+    <div class="large-12 columns">
+      <label id="at-symbol">@
+        <input id="recipient" type="text" name="recipient" placeholder="Recipient" />
+      </label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-12 columns">
+      <label id="add-tweet-message">Tweet Message
+        <textarea id="add-tweet-here" name="message" placeholder="Type here"></textarea>
+      </label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-12 columns">
+      <input id="postcard-message-next" type="submit" value="Next"/>
+    </div>
+  </div>
+</form>
 </body>
 </html>
 >>>>>>> d6105b78b9a31ca95204d55ae69b82c9f4ddd0f6
